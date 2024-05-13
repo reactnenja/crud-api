@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
-  reactStrictMode: true,
-  images: {
-    domains: ["ik.imagekit.io"]
-  }
-}
+const nextConfig = {
+    reactStrictMode: true,
+    swcMinify: true,
+    images: {
+        domains: ['picsum.photos', 'lh3.googleusercontent.com', 'avatars.githubusercontent.com'],
+    },
+};
+
+module.exports = nextConfig;
