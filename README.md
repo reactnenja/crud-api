@@ -1,45 +1,34 @@
-# A Collaborative Todo Sample - ZenStack + Next.js
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This project is a collaborative todo app built with [Next.js](https://nextjs.org), [Next-Auth](nextauth.org), and [ZenStack](https://zenstack.dev).
+## Getting Started
 
-In this fictitious app, users can be invited to workspaces where they can collaborate on todos. Public todo lists are visible to all members in the workspace.
+First, run the development server:
 
-See a live deployment at: https://zenstack-todo.vercel.app/.
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-## Features:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
--   User signup/signin
--   Creating workspaces and inviting members
--   Data segregation and permission control
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## Running the sample:
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-1. Setup a new PostgreSQL database
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-    You can launch a PostgreSQL instance locally, or create one from a hoster like [Supabase](https://supabase.com). Create a new database for this app, and set the connection string in .env file.
+## Learn More
 
-1. Install dependencies
+To learn more about Next.js, take a look at the following resources:
 
-    ```bash
-    npm install
-    ```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-1. Generate server and client-side code from model
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-    ```bash
-    npm run generate
-    ```
+## Deploy on Vercel
 
-1. Synchronize database schema
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-    ```bash
-    npm run db:push
-    ```
-
-1. Start dev server
-
-    ```bash
-    npm run dev
-    ```
-
-For more information on using ZenStack, visit [https://zenstack.dev](https://zenstack.dev).
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
